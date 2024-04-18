@@ -31,40 +31,46 @@
    left: 0;
 
   }
-  .header-moble{
+  .header-mobile{
     display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.header-moble button {
+.header-mobile button {
   border: none;
   background: none;
   width: fit-content;
 }
 
-.header-moble nav{
+.header-mobile nav{
     position: fixed;
     background-color: var(--almost-white);
     right: 0;
     top: 0;
     height: 100vh;
-    width: 16rem;
+    width: -16rem;
     z-index: 999;
 
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
+
+    transition: 0.7s;
     }
 
-.header-moble nav button{
+    .header-mobile nav.abrir{
+        right: 0;
+    }
+
+.header-mobile nav button{
     margin-left: auto;
     margin-bottom: 4.5rem;
     }
 
- .header-moble a{
+ .header-mobile a{
         text-decoration: none;
         color: var(--dark-blue);
         font-size: 1.5rem;
