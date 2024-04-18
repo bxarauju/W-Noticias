@@ -21,6 +21,16 @@
     background-color: var(--almost-white);
   }
 
+  body.-menu-open::before{
+    content: “”;
+   position: fixed;
+   height: 100vg;
+   width: 100;
+   background-color: rgba(0, 0, 26,0.5);
+   top: 0;
+   left: 0;
+
+  }
   .header-moble{
     display: flex;
   justify-content: space-between;
@@ -31,7 +41,35 @@
 .header-moble button {
   border: none;
   background: none;
+  width: fit-content;
 }
+
+.header-moble nav{
+    position: fixed;
+    background-color: var(--almost-white);
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    }
+
+.header-moble nav button{
+    margin-left: auto;
+    margin-bottom: 4.5rem;
+    }
+
+ .header-moble a{
+        text-decoration: none;
+        color: var(--dark-blue);
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
 
 .primeira-seçao {
   margin-bottom: 4rem;
